@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Smart Agora</string>
+    <string name="add_files">Add Files</string>
+    <string name="assignments">Assignments</string>
+    <string name="add_more_files">Add More Files</string>
+
+    <string name="batteryinformation">BatteryInformation</string>
+    <string name="basic_help_section">This is basic help section. Complete Assignment by giving answer of wver Question !!!</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="check_icon">&#xf00c;</string>
+
+    <string name="dias_group_default_value">0.0</string>
+    <string name="dias">DIAS</string>
+    <string name="destination_reached">Destination Reached</string>
+
+    <string name="enter_the_data_scientist_id">Enter the Data Scientist ID</string>
+    <string name="empty_hint" />
+
+    <string name="help">Help</string>
+    <string name="help_default_text">This is help</string>
+
+    <string name="image_for_car_mode">image for car-mode</string>
+    <string name="image_for_train_mode">image for train-mode</string>
+    <string name="image_for_bicycle_mode">image for bicycle-mode</string>
+    <string name="image_for_walking_mode">image for walking-mode</string>
+    <string name="image_for_showing_personal_value">Image for showing personal value</string>
+    <string name="image_for_group_aggregated_value">Image for group aggregated value</string>
+
+    <string name="loading_logo">Loading logo</string>
+    <string name="loading">Loading…</string>
+    <string name="logo_for_delete_button">logo for delete button</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="no">NO</string>
+    <string name="no_projects">No Projects</string>
+    <string name="network_problem">Network Problem! try again</string>
+    <string name="no_assignments">No Assignments</string>
+
+    <string name="ok">OK</string>
+
+    <string name="personal_default_value">0.0</string>
+    <string name="please_do_not_leave_it_empty">Please do not leave it empty</string>
+    <string name="project">Project</string>
+
+    <string name="shows_transport_mean">Shows transport mean</string>
+    <string name="select_projects">Select Projects</string>
+    <string name="sqlite">Sqlite</string>
+    <string name="sensor">Sensor</string>
+    <string name="save">Save</string>
+    <string name="scientist_code">Access Code</string>
+    <string name="submit">Submit</string>
+    <string name="stop_to_answer">Please stop to answer the question.</string>
+
+    <string name="title_activity_home_screen3">Smart Agora</string>
+    <string name="textview">TextView</string>
+
+    <string name="unclear">Not 100 percent clear</string>
+
+    <string name="you_have_reached_your_destination">You have reached your destination.</string>
+
+    <!-- separator -->
+
+
+
+</resources>

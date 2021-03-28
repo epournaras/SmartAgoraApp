@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="6dip">
+    <RadioButton
+        android:id="@+id/radiobutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/black"
+        android:buttonTint="#80CBC4"
+        android:text="" />
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview"
+        android:textColor="@color/black"
+        android:layout_alignBaseline="@+id/radiobutton1"
+        android:layout_alignBottom="@+id/radiobutton1"
+        android:layout_toEndOf="@+id/radiobutton1"
+        />
+    <!--android:focusable="false"-->
+    <!--android:focusableInTouchMode="false"-->
+
+
+
+</RelativeLayout>

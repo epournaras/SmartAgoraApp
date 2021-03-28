@@ -1,0 +1,100 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        //noinspection GradleDynamicVersion
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin:'maven'
+
+android {
+    compileSdkVersion 29         //Nougat	7.0
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "smartagora.ethz.ch"
+        minSdkVersion 19            //Ice Cream Sandwich	4.0.3 - 4.0.4
+        //noinspection OldTargetApi
+        targetSdkVersion 29        //Nougat	7.0
+        versionCode 2
+        versionName "1.1"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    maven { url 'https://maven.fabric.io/public' }
+    google()
+}
+
+dependencies {
+    implementation project(':diasLibrary')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    implementation('com.stanfy:gson-xml-java:0.1.+') {
+        exclude group: 'xmlpull', module: 'xmlpull'
+    }
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation(name: 'kinvey-android-2.10.9', ext: 'aar')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    //noinspection GradleDependency
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'com.intuit.sdp:sdp-android:1.0.3'
+    implementation 'commons-lang:commons-lang:2.6'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.squareup.retrofit:retrofit:2.0.0-beta2'
+    implementation 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+//    compile 'com.google.android.gms:play-services:9.8.0'
+    //noinspection GradleDependency,GradleDependency
+    implementation 'com.google.android.gms:play-services-places:11.4.2'
+    //noinspection GradleDependency
+    implementation 'com.google.android.gms:play-services-location:11.4.2'
+    //noinspection GradleDependency
+    implementation 'com.google.android.gms:play-services-maps:11.4.2'
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    //noinspection GradleDynamicVersion
+    implementation 'com.google.maps.android:android-maps-utils:0.5+'
+//    compile 'com.kofigyan.stateprogressbar:stateprogressbar:0.0.1'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+
+    implementation 'android.arch.persistence.room:runtime:1.1.1'
+    annotationProcessor 'android.arch.persistence.room:compiler:1.1.1'
+
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.4'
+
+    implementation 'com.kofigyan.stateprogressbar:stateprogressbar:0.0.6'
+    implementation 'com.jaredrummler:android-device-names:1.1.5'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.github.warkiz.widget:indicatorseekbar:2.1.2'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true
+    }
+}

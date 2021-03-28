@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/dataScientistId"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:icon="@drawable/add"
+        android:title="@string/scientist_code"/>
+    <item
+        android:id="@+id/selectProject"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:icon="@drawable/select"
+        android:title="@string/project"/>
+
+    <item
+        android:id="@+id/getAllAssignments"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:icon="@drawable/assignment"
+        android:title="@string/assignments"/>
+
+    <item
+        android:id="@+id/completeAssignment"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:icon="@drawable/submit"
+        android:title="@string/submit"/>
+
+    <item
+        android:id="@+id/help"
+        android:orderInCategory="100"
+        android:icon="@drawable/help"
+        app:showAsAction="never"
+        android:title="@string/help"/>
+
+
+</menu>
